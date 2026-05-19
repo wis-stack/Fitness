@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".WorkoutPlan">
+
+    <ImageView
+        android:layout_width="966dp"
+        android:layout_height="1023dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="-200dp"
+        android:src="@drawable/background1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWPBeginner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="200dp"
+        android:alpha="0.8"
+        android:background="@drawable/custom_border"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="Beginner"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWPIntermediate"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.8"
+        android:background="@drawable/custom_border"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="Intermediate"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWPBeginner" />
+
+    <TextView
+        android:id="@+id/txtWPAdvanced"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.8"
+        android:background="@drawable/custom_border"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="Advanced"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWPIntermediate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

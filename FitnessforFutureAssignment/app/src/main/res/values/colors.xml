@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_800">#273321</color>
+    <color name="green_600">#2c8505</color>
+    <color name="green_400">#d2ea9e</color>
+    <color name="green_200">#a1ca7a</color>
+    <color name="green_100">#a9c8af</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_0">#F4F9D3</color>
+    <color name="lightpink">#fceee9</color>
+    <color name="Darkpink">#efb0A4</color>
+</resources>

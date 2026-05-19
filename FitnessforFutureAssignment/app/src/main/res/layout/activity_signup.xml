@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".Signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtSignUplogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/audiowide"
+                    android:text="Fitness for Future"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSignUpWlc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Create an Account"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/txtSignUplogo"
+                    app:layout_constraintStart_toStartOf="@+id/txtSignUplogo"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSignUplogo" />
+
+                <TextView
+                    android:id="@+id/txtSignUpWlc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Enter your information"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/txtSignUpWlc"
+                    app:layout_constraintStart_toStartOf="@+id/txtSignUpWlc"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSignUpWlc" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSignUpTLFirstName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="First Name"
+                    app:errorEnabled="true"
+                    app:helperText="*required"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSignUpWlc1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpFirstName"
+                        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textSize="12sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSignUpTLLastName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:hint="Last Name"
+                    app:helperText="*optional"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintEnd_toEndOf="@+id/edtSignUpTLFirstName"
+                    app:layout_constraintStart_toStartOf="@+id/edtSignUpTLFirstName"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLFirstName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpLastName"
+                        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textSize="12sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSignUpTLAge"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="81dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:hint="Age"
+                    app:errorEnabled="true"
+                    app:helperText="*required"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintEnd_toEndOf="@+id/edtSignUpTLPassword"
+                    app:layout_constraintStart_toStartOf="@+id/edtSignUpTLPassword"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLPassword">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpAge"
+                        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textSize="12sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSignUpTLPhone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:hint="Phone"
+                    app:errorEnabled="true"
+                    app:helperText="*required"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintEnd_toEndOf="@+id/edtSignUpTLEmail"
+                    app:layout_constraintStart_toStartOf="@+id/edtSignUpTLEmail"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLEmail">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpPhone"
+                        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:textSize="12sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSignUpTLEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:hint="Email"
+                    app:errorEnabled="true"
+                    app:helperText="*required"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintEnd_toEndOf="@+id/edtSignUpTLLastName"
+                    app:layout_constraintStart_toStartOf="@+id/edtSignUpTLLastName"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLLastName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpEmail"
+                        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textSize="12sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSignUpTLPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:hint="Password"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:errorEnabled="true"
+                    app:helperText="min 8 characters, max 20 characters"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintEnd_toEndOf="@+id/edtSignUpTLPhone"
+                    app:layout_constraintStart_toStartOf="@+id/edtSignUpTLPhone"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLPhone"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpPassword"
+                        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSignUpTLWeight"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:hint="Weight"
+                    app:errorEnabled="true"
+                    app:helperText="*required"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintEnd_toEndOf="@+id/edtSignUpTLHeight"
+                    app:layout_constraintStart_toStartOf="@+id/edtSignUpTLHeight"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLHeight"
+                    app:suffixText="kg">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpWeight"
+                        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textSize="12sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtSignUpTLHeight"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:hint="Height"
+                    app:errorEnabled="true"
+                    app:helperText="*required"
+                    app:helperTextEnabled="true"
+                    app:layout_constraintEnd_toEndOf="@+id/edtSignUpTLAge"
+                    app:layout_constraintStart_toStartOf="@+id/edtSignUpTLAge"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLAge"
+                    app:suffixText="cm">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpHeight"
+                        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textSize="12sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSignUpSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Submit"
+                    app:layout_constraintEnd_toEndOf="@+id/edtSignUpTLWeight"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLWeight" />
+
+                <Button
+                    android:id="@+id/btnSignUpReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Reset"
+                    app:layout_constraintStart_toStartOf="@+id/edtSignUpTLWeight"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLWeight" />
+
+                <TextView
+                    android:id="@+id/txtSignUpReminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="**Your information will be kept confidentialy**"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSignUpTLWeight" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

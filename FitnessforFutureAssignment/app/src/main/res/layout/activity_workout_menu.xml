@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".WorkoutMenu"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.3"
+        android:src="@drawable/motivation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border_3"
+        android:fontFamily="@font/amaranth"
+        android:text="25 jumping jacks\n15 bodyweight squats\n20-30 second plank\nWalking lunges — 10 per side\n10 push-ups (on knees if you need to)\n30 seconds running in place with high knees\n15 glute bridges\n30 seconds Russian twist\n10 lateral lunges per side\n15 superman back extensions\n15 bent-knee triceps dips off the edge of a bench or chair (straighten your legs if they are too easy)"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_border_3"
+        android:fontFamily="@font/amaranth"
+        android:text="Squat: 4x4 @80% 1RM\nAn RPE of 7-8 on Heavy Compound Work(Leave 2-3 Reps in the Tank)\nIncline Dumbbell Press: 3x8@ RPE 7-8\nLying Leg Curl 3x10@ RPE 7-8\nLat Pulldown: 3x10@ RPE 7-8\nEZ Bar Bicep Curl: 3x12/12@ RPE10"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_border_3"
+        android:fontFamily="@font/amaranth"
+        android:text="10 One-Legged Squats (each leg)\n15 Reverse Lunges (each leg)\n20 Bodyweight squats\n10 Pull-Ups\n10 Dips\n10 Inverted bodyweight rows\n10 Spider-Man push-ups\n15 Alternating Reverse Lunges (each leg)\n10 Pike Presses\n10 Inverted Rows\n30 Mountain Climbers"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnWPBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

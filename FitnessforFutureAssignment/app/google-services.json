@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "501863685216",
+    "firebase_url": "https://fitness-for-future-65646-default-rtdb.firebaseio.com",
+    "project_id": "fitness-for-future-65646",
+    "storage_bucket": "fitness-for-future-65646.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501863685216:android:3ffdba6583896eefa0f705",
+        "android_client_info": {
+          "package_name": "com.example.FitnessforFuture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501863685216-p0ggs7i10cuso5fc0cbmnna9t2ji41d5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCujPFvj-dEyfBYcIafpC9edFNmzsGWZIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501863685216-p0ggs7i10cuso5fc0cbmnna9t2ji41d5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501863685216:android:27f25d61e265dc32a0f705",
+        "android_client_info": {
+          "package_name": "com.example.fitnessforfutureassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501863685216-p0ggs7i10cuso5fc0cbmnna9t2ji41d5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCujPFvj-dEyfBYcIafpC9edFNmzsGWZIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501863685216-p0ggs7i10cuso5fc0cbmnna9t2ji41d5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
